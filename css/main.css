@@ -1,0 +1,184 @@
+@charset "uft-8";
+*{margin: 0; padding: 0;}
+
+#wrap{
+    width: 1000px; margin: 0 auto;
+    position: relative;
+}
+
+img{width: 100%;}
+
+.title.on{
+    position: absolute;
+    width: 644px;
+    height: 460px;
+    left: 100px;
+    top: 834px;
+    transition: .8s;
+    transition-delay: .6s;
+    opacity: 1;
+}
+.title{
+    position: absolute;
+    width: 644px;
+    height: 460px;
+    left: 200px;
+    top: 834px;
+    opacity: 0;
+}
+
+/* 낙엽 */
+.move{
+    position: absolute;
+    width: 110%;
+    height: 100vh;
+    top: -5%; left: -5%;
+    animation: updown 5s infinite;
+}
+
+@keyframes updown{
+    0%{transform: translate(100px, -100px); opacity: 0;}
+    20%{transform: translate(0px, 0px); opacity: .4;}
+    60%{transform: translate(0px, 0px); opacity: 1;}
+    80%{transform: translate(-45px, -50px); opacity: .4;}
+    100%{transform: translate(-45px, -50px); opacity: 0;}
+}
+
+/* 금액박스 */
+.box.on{
+    position: absolute;
+    width: 830px;
+    height: 223px;
+    left: 82px;
+    transition: .6s;
+    opacity: 1;
+}
+.box{
+    position: absolute;
+    width: 830px;
+    height: 223px;
+    left: 182px;
+    opacity: 0;
+}
+.on.box1{
+    top: 1336px;
+    transition-delay: .5s;
+}
+.on.box2{
+    top: 1543px;
+    transition-delay: 1s;
+}
+.on.box3{
+    top: 1750px;
+    transition-delay: 1.5s;
+}
+.on.box4{
+    top: 1957px;
+    transition-delay: 2s;
+}
+
+.text{
+    position: absolute;
+    width: 666px;
+    height: 857px;
+    left: 167px;
+    top: 2301px;
+    z-index: 1;
+}
+
+/* 인스타모양 */
+.model1{
+    position: absolute;
+    width: 385px;
+    height: 563px;
+    left: -100px;
+    top: 2465px;
+    opacity: 0;
+    transition: .6s;
+}
+.model1.on{
+    position: absolute;
+    width: 385px;
+    height: 563px;
+    left: 100px;
+    top: 2465px;
+    opacity: 1;
+}
+
+.model2{
+    position: absolute;
+    width: 385px;
+    height: 563px;
+    left: 715px;
+    top: 2465px;
+    opacity: 0;
+    transition: .8s;
+}
+.model2.on{
+    position: absolute;
+    width: 385px;
+    height: 563px;
+    left: 515px;
+    top: 2465px;
+    opacity: 1;
+}
+
+/* 금꽃 */
+.gf1{
+    position: absolute;
+    width: 304px; height: 258px;
+    top: 2180px; left: 0px;
+}
+
+.gf2{
+    position: absolute;
+    width: 304px; height: 258px;
+    top: 2180px; right: 0px;
+}
+.gf3{
+    position: absolute;
+    width: 35%; height: 350px;
+    top: 2960px; left: -7px;
+}
+
+/* 하트 */
+.heart{
+    position: absolute;
+    width: 5%; height: 50px;
+    transition: .3s;
+    opacity: 0;
+}
+.heart.on{
+    position: absolute;
+    width: 15%; height: 50px;
+    opacity: 1;
+}
+
+
+.on.heart1{
+    top: 2594px;
+    left: 41px;
+    transition-delay: .5s;
+}
+.on.heart2{
+    top: 2535px;
+    left: 444px;
+    transition-delay: 1s;
+}
+.on.heart3{
+    top: 2753px;
+    left: 394px;
+    transition-delay: 1.5s;
+}
+.on.heart4{
+    top: 2697px;
+    left: 822px;
+    transition-delay: 2s;
+}
+
+.coupon{
+    position: absolute;
+    width: 1000px; height: 700px;
+    top: 3252px;
+}
+
